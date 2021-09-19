@@ -8,7 +8,6 @@
 <script>
 
 
-import Page from "./Navigation_bar/Navigation_object/Page.js";
 import CardContainer from "@/components/CardProject/CardContainer.vue";
 
 
@@ -18,7 +17,6 @@ export default {
   data: function () {
     return {
       date: new Date().toLocaleTimeString(),
-      pages: Page
     };
 }
 };

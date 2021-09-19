@@ -1,19 +1,45 @@
 <template>
   <div id="app">
-    <Head/>
+    <Heads/>
+
+    <CardContainer v-if="page === 'Projets'"/>
+    <Accueil v-if="page === 'Accueil'"/>
+    <Liens v-if="page === 'Liens'"/>
+
+
+
   </div>
 </template>
 
 <script>
-
-import Head from "@/components/Head/Head.vue";
+import Heads from "@/components/Head/Head.vue";
+import CardContainer from  "@/components/CardProject/CardContainer.vue";
+import Accueil from "@/components/Accueil/Acceuil.vue"
+import Liens from "@/components/Liens/Liens.vue"
 
 export default {
   name: 'App',
   components: {
-    Head,
+    Heads,
+    CardContainer,
+    Accueil,
+    Liens
+  },
+  data() {
+    return {
+        page: "Accueil",
+    }
+  },
+  methods: {
+    changePage(newPage) {
+      this.page = newPage;
+    }
   }
 }
+
+
+
+
 </script>
 
 <style>
