@@ -1,7 +1,7 @@
 <template>
   <header>
     <b-navbar toggleable="lg" type="dark" variant="dark" align="right">
-      <b-navbar-brand>Merveilleux site du q</b-navbar-brand>
+      <b-navbar-brand>{{ page_actuel }}</b-navbar-brand>
 
       <b-navbar-nav class="position-relative position-left">
         <b-nav-item v-on:click="changePage('Liens')">Lien du q</b-nav-item>
@@ -20,10 +20,8 @@
 <script>
 export default {
   name: "Heads",
-  data: function() {
-    return {
-      accueil_link: "http://localhost:8080/"
-    }
+  props: {
+    page_actuel: String
   },
   methods: {
     changePage(newPage) {

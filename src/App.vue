@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Heads/>
+    <Heads :page_actuel="page"/>
+    <test_background></test_background>
+
 
     <CardContainer v-if="page === 'Projets'"/>
     <Accueil v-if="page === 'Accueil'"/>
@@ -16,6 +18,7 @@ import Heads from "@/components/Head/Head.vue";
 import CardContainer from  "@/components/CardProject/CardContainer.vue";
 import Accueil from "@/components/Accueil/Acceuil.vue"
 import Liens from "@/components/Liens/Liens.vue"
+import test_background from "@/components/background/test_background";
 
 export default {
   name: 'App',
@@ -23,7 +26,8 @@ export default {
     Heads,
     CardContainer,
     Accueil,
-    Liens
+    Liens,
+    test_background
   },
   data() {
     return {

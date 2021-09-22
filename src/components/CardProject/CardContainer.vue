@@ -31,9 +31,6 @@ import CardWithImg from "@/components/CardProject/Cards/CardWithImg";
 
 //const parsed_project_data = JSON.parse(projet_data);
 
-
-console.log(projet_data[0].Title);
-
 export default {
   name: "CardContainer",
   components: { CardWithoutImg, CardWithImg },
