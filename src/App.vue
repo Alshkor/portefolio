@@ -1,15 +1,13 @@
 <template>
   <div id="app">
     <Heads :page_actuel="page"/>
-    <test_background></test_background>
+    <test_background class="background"/>
 
-
-    <CardContainer v-if="page === 'Projets'"/>
-    <Accueil v-if="page === 'Accueil'"/>
-    <Liens v-if="page === 'Liens'"/>
-
-
-
+    <div class="body">
+      <CardContainer v-if="page === 'Projets'"/>
+      <Accueil v-if="page === 'Accueil'"/>
+      <Liens v-if="page === 'Liens'"/>
+    </div>
   </div>
 </template>
 
@@ -54,5 +52,19 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+.background, .body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+
+.background {
+  z-index: 10;
+}
+
 
 </style>
