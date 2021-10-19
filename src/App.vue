@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Heads :page_actuel="page"/>
-    <test_background class="background"/>
 
     <div class="body">
       <CardContainer v-if="page === 'Projets'"/>
@@ -16,7 +15,7 @@ import Heads from "@/components/Head/Head.vue";
 import CardContainer from  "@/components/CardProject/CardContainer.vue";
 import Accueil from "@/components/Accueil/Acceuil.vue"
 import Liens from "@/components/Liens/Liens.vue"
-import test_background from "@/components/background/test_background";
+//import test_background from "@/components/background/test_background";
 
 export default {
   name: 'App',
@@ -25,7 +24,7 @@ export default {
     CardContainer,
     Accueil,
     Liens,
-    test_background
+    //test_background
   },
   data() {
     return {
@@ -46,24 +45,26 @@ export default {
 
 <style>
 #app {
+  max-height: available;
+  max-width: available;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #283440;
 }
 
 .background, .body {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  max-height: available;
+  max-width: available;
 }
 
 
 
 .background {
   z-index: 10;
+
 }
 
 

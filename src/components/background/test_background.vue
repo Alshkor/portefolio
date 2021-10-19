@@ -3,7 +3,6 @@
       <canvas class="fullPage" id="canvas" v-on:mouseenter="positionPath" v-on:mousemove="draw" v-on:mouseleave="clear">Bla
       </canvas>
     </div>
-
 </template>
 
 <script>
