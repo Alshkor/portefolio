@@ -14,10 +14,25 @@
       "img_link": "/Cards/plage.jpeg"
     },
     "Lego": {
-    "title": "Environment line",
+    "title": "Lego",
     "description": "Jeu de plateau en C réalisé dans le cadre de l'UE projet avec 3 camarades",
     "link": "http://voilauneautreurlmachin",
     "img_bool": true,
     "img_link": "/Cards/plagev2.jpg"
-  }
-  }]
+  },
+    "Jeux": {
+      "title": "Jeux",
+      "description": "Jeu de plateau en C réalisé dans le cadre de l'UE projet avec 3 camarades",
+      "link": "http://voilauneautreurlmachin",
+      "img_bool": true,
+      "img_link": "/Cards/plagev2.jpg"
+    },
+    "Zble": {
+      "title": "Zble",
+      "description": "Jeu de plateau en C réalisé dans le cadre de l'UE projet avec 3 camarades",
+      "link": "http://voilauneautreurlmachin",
+      "img_bool": true,
+      "img_link": "/Cards/plagev2.jpg"
+    }
+ }
+]

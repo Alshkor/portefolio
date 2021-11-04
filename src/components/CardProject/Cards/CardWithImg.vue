@@ -27,10 +27,12 @@ export default {
     link: String,
     img_link: String
   },
-  data: function() {
+  data() {
     let image = new Image();
     image.src = this.img_link;
-    return image;
+    return {
+      image
+    }
   }
 }
 </script>
