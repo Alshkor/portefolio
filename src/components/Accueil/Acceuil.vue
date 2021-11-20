@@ -20,26 +20,65 @@ let stopWriting = false;
 export default {
   name: "Acceuil",
   mounted() {
+      canvasText = document.getElementById("presentation");
       width = 0;
-      length = 50;
+      length = 120;
       isWriting = false;
       stopWriting = false;
-      canvasText = document.getElementById("presentation");
       //Bon l'accueil est devenue un sacré bordel mais en gros writeInAsynchronus écrit les lettres
       //les unes apres les autres, setStyleCanvas calcul la hauteur qu'il faut pour le canvas
       //Ensuite dès qu'on a écrit se que l'on voulait, on ferme le canvas et on en rouvre un avec un style
       //différent par exemple.
-      canvasText.width = document.documentElement.clientWidth;
-      setStyleCanvas(canvasText,'50px', "#99b7c2","sans serif", 14);
-      writeCenter("Bonjour", canvasText);
-      passLine();
-      writeInAsynchronus("Bienvenue sur mon site internet, je me présente, Axel, j'adore créé des jeux vidéos et réaliser différents projets informatiques. N'hésitez pas à me contacter au travers des différents liens inscrits sur le site.", canvasText);
-      stopWriting = false;
+      canvasText.width = document.documentElement.clientWidth - 50;
+      //Noir et blanc : #070b0f #7e8595
+      //Marron et rouge : #191512 #781a25
+      //Bleu fonce et bleu : #102542 #b4f8fb
+      //Violet et pas violet : #351f67 #eacff8
+      setStyleCanvas(canvasText,'50px', "#b4f8fb","sans serif", 14);
+      writeText();
   },
   destroyed() {
       isWriting = false;
       stopWriting = true;
   },
+}
+
+
+function writeText() {
+  writeCenter("Bonjour", canvasText);
+  passLine();
+  writeInAsynchronus("Bienvenue sur mon site internet, je me présente, Axel, j'adore créé des jeux vidéos et réaliser différents projets informatiques. N'hésitez pas à me contacter au travers des différents liens inscrits sur le site.", canvasText);
+  stopWriting = false;
+}
+
+
+function getMot(sentence) {
+  let mot = "",
+      new_sentence = "";
+  if(sentence[0] === " ") {
+    mot = " ";
+    new_sentence = sentence.slice(1);
+    return {
+      mot,
+    new_sentence
+    };
+  }
+  for(let i = 0; i < sentence.length; i++) {
+    if(sentence[i] === " ") {
+        new_sentence = sentence.slice(i);
+        return {
+          mot,
+          new_sentence
+        };
+      }
+      else {
+        mot = mot + sentence[i];
+      }
+  }
+  return {
+    mot,
+    new_sentence
+  };
 }
 
 async function writeInAsynchronus(sentence, canvas) {
@@ -51,12 +90,16 @@ async function writeInAsynchronus(sentence, canvas) {
   isWriting = true;
   let lengthSentence = sentence.length;
   for(let i = 0; i < lengthSentence ; i++) {
-    if(width + canvas.getContext("2d").measureText(sentence[i]).width >= canvas.width) {
+    let mot = getMot(sentence);
+    if(width + canvas.getContext("2d").measureText(mot.mot).width >= canvas.width) {
       width = 0;
       length += 60;
     }
-      await writeLetters(sentence[i], 50,canvas.getContext("2d"));
-      width += canvas.getContext("2d").measureText(sentence[i]).width;
+    for(let j = 0; j < mot.mot.length ; j++) {
+      await writeLetters(mot.mot[j], 50, canvas.getContext("2d"));
+      width += canvas.getContext("2d").measureText(mot.mot[j]).width;
+    }
+      sentence = mot.new_sentence;
   }
   isWriting = false;
 }

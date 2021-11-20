@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <Heads :page_actuel="page"/>
-
-    <div class="body">
-      <CardContainer v-if="page === 'Projets'"/>
-      <Accueil v-if="page === 'Accueil'"/>
-      <Liens v-if="page === 'Liens'"/>
+    <div id="bg">
     </div>
+      <Heads :page_actuel="page" class="head"/>
+
+      <div class="body">
+        <CardContainer v-if="page === 'Projets'"/>
+        <Accueil v-if="page === 'Accueil'"/>
+        <Liens v-if="page === 'Liens'"/>
+      </div>
   </div>
 </template>
 
@@ -52,7 +54,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: #283440;
 }
 
 .background, .body {
@@ -60,7 +61,18 @@ export default {
   max-width: available;
 }
 
+.head {
+  position:fixed;
+  width: 100%;
+  z-index: 3;
+}
 
+#bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #102542;
+}
 
 .background {
   z-index: 10;

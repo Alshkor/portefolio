@@ -10,7 +10,7 @@
         class="mb-2"
     >
       <b-card-text>
-        {{ description }} Description du projet;; Lien de l'image : {{ img_link }}
+        {{ description }}
       </b-card-text>
       <b-button :href=link variant="primary">Go somewhere</b-button>
     </b-card>
