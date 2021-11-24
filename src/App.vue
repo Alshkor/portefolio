@@ -6,11 +6,13 @@
       <CardContainer v-if="page === 'Projets'"/>
       <Accueil v-if="page === 'Accueil'"/>
       <Liens v-if="page === 'Liens'"/>
+      <ProjectDetail v-if="page === 'ProjectDetail'" :Project="Project"/>
     </div>
   </div>
 </template>
 
 <script>
+import ProjectDetail from '@/components/ProjectDetail/ProjectDetail.vue';
 import Heads from "@/components/Head/Head.vue";
 import CardContainer from  "@/components/CardProject/CardContainer.vue";
 import Accueil from "@/components/Accueil/Acceuil.vue"
@@ -20,6 +22,7 @@ import Liens from "@/components/Liens/Liens.vue"
 export default {
   name: 'App',
   components: {
+    ProjectDetail,
     Heads,
     CardContainer,
     Accueil,
@@ -29,11 +32,16 @@ export default {
   data() {
     return {
         page: "Accueil",
+        Project: "0"
     }
   },
   methods: {
     changePage(newPage) {
       this.page = newPage;
+    },
+    infoProject(title){
+      this.page = 'ProjectDetail';
+      this.Project = title;
     }
   }
 }

@@ -25,40 +25,17 @@
 import * as projet_data from "./Cards/Cards.json";
 import CardWithoutImg from "@/components/CardProject/Cards/CardWithoutImg";
 import CardWithImg from "@/components/CardProject/Cards/CardWithImg";
-
 //const parsed_project_data = JSON.parse(projet_data);
-let listProjets;
-
-
 export default {
   name: "CardContainer",
   components: { CardWithoutImg, CardWithImg },
   data: function () {
     return {
       Cards: projet_data[0],
-      Row: Object.keys(projet_data[0]).length / 2
     }
   },
-  created() {
-    listProjets = [];
-    for(var proj in projet_data[0]) {
-      listProjets[listProjets.length] = projet_data[0][proj].title;
-    }
-  },
-  methods: {
-    isNewRow(object) {
-      if(listProjets.indexOf(object.title) % 2 === 1) {
-        console.log("On est sense commencer une nouvelle ligne");
-      }
-      return listProjets.indexOf(object.title) % 2 === 0;
-    }
-  }
 }
-
-
-
 </script>
 
 <style scoped>
-
 </style>

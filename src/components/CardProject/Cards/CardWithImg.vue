@@ -12,7 +12,7 @@
       <b-card-text>
         {{ description }} Description du projet;; Lien de l'image : {{ img_link }}
       </b-card-text>
-      <b-button :href=link variant="primary">Go somewhere</b-button>
+      <b-button v-on:click="changePage(title)" variant="primary">Go somewhere</b-button>
     </b-card>
   </div>
 </template>
@@ -32,6 +32,12 @@ export default {
     image.src = this.img_link;
     return {
       image
+    }
+  },
+  methods: {
+    changePage(title) {
+      this.$parent.$parent.infoProject(title);
+
     }
   }
 }
