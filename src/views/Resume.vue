@@ -90,6 +90,8 @@
         <v-progress-linear v-model="buffer1" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
         <strong>Unity XR</strong>
         <v-progress-linear v-model="buffer3" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
+        <strong>Papyrus</strong>
+        <v-progress-linear v-model="buffer4" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
       </v-flex>
       <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
         <h2>
@@ -101,7 +103,6 @@
         <v-progress-linear v-model="buffer5" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
         <strong>Ocaml/Prolog</strong>
         <v-progress-linear v-model="buffer6" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
-
         <strong>HTML/css/js</strong>
         <v-progress-linear v-model="buffer7" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
       </v-flex>
@@ -173,7 +174,7 @@ export default {
         this.buffer1 = 90;
         this.buffer2 = 75;
         this.buffer3 = 90;
-        this.buffer4 = 90;
+        this.buffer4 = 60;
         this.buffer5 = 80;
         this.buffer6 = 70;
         this.buffer7 = 60;
