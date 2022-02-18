@@ -23,51 +23,47 @@
 <script>
 export default {
   metaInfo: {
-    title: "Portfolio",
+    title: 'Portfolio',
     titleTemplate: "%s ← Gael's Space",
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        name: "description",
+        name: 'description',
         content:
           "Gael Courmont's Portfolio Web Development Video game development Data Science"
       },
-      { charset: "utf-8" },
-      { property: "og:title", content: "Gael' Space" },
-      { property: "og:site_name", content: "Gael' Space" },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://Gael.space" },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: "Gael' Space" },
+      { property: 'og:site_name', content: "Gael' Space" },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://Gael.space' },
       {
-        property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
-      },
-      {
-        property: "og:description",
+        property: 'og:description',
         content:
           "Gael Courmont's Portfolio Web Development Video game development Data Science"
       }
     ]
   },
-  data() {
+  data () {
     return {
       portfolios: [
         {
-          src: "https://as1.ftcdn.net/v2/jpg/01/71/29/48/1000_F_171294824_FDLwEWTzlfVr8iE0qojO0mmai44fdbIj.jpg",
-          title: "Games"
+          src: 'https://as1.ftcdn.net/v2/jpg/01/71/29/48/1000_F_171294824_FDLwEWTzlfVr8iE0qojO0mmai44fdbIj.jpg',
+          title: 'Games'
         },
 
         {
-          src: "https://static1.bigstockphoto.com/7/8/3/large2/387255466.jpg",
-          title: "AI"
+          src: 'https://static1.bigstockphoto.com/7/8/3/large2/387255466.jpg',
+          title: 'AI'
         },
         {
-          src: "https://i.imgur.com/GvTt5GG.png",
-          title: "Web"
+          src: 'https://i.imgur.com/GvTt5GG.png',
+          title: 'Development'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

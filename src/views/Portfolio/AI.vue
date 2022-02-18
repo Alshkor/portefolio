@@ -1,37 +1,67 @@
 <template>
   <v-container grid-list-xl>
     <h2 class="pl-4">
-      <span>Video</span>
+      <span>AI</span>
       <span class="green--text">Portfolio</span>
     </h2>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-dialog
-        v-model="video.dialog"
+        v-model="project.dialog"
         lazy
         max-width="800"
-        v-for="video in videos"
-        :key="video.title"
+        v-for="project in AI"
+        :key="project.title"
       >
         <template v-slot:activator="{ on }">
           <v-flex xs12 sm6 md4 lg4 xl4 v-on="on">
             <v-card hover flat color="transparent">
               <v-img
-                :src="video.poster"
+                :src="project.poster"
                 aspect-ratio="1.7778"
-                :alt="video.title"
-                lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
                 contain
+                :alt="project.title"
+                lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
               ></v-img>
-              <v-card-title primary-title class="justify-center">{{video.title}}</v-card-title>
+              <v-card-title primary-title class="cardTitle">{{project.title}}</v-card-title>
             </v-card>
           </v-flex>
         </template>
-        <v-card v-if="video.dialog">
-          <plyr>
-            <div class="plyr__video-embed">
-              <iframe :src="video.href" allowfullscreen allowtransparency allow="autoplay"></iframe>
+        <v-card v-if="project.dialog">
+          <v-card-title class="cardTitle">
+            {{project.title}}
+          </v-card-title>
+          <v-card-text>
+            <h3>Link</h3>
+          </v-card-text>
+          <v-card-text>
+            <a :href="project.link">{{project.link}}</a>
+          </v-card-text>
+          <v-card-text>
+            <h3>Description</h3>
+          </v-card-text>
+          <v-card-text>
+            <p>{{project.description}}</p>
+          </v-card-text>
+          <v-card-text>
+            <h3>Demo</h3>
+          </v-card-text>
+          <v-card-media v-if="project.demo">
+            <div class="iframe-wrapper">
+              <iframe :src="project.href" allowfullscreen allowtransparency allow="autoplay" ></iframe>
             </div>
-          </plyr>
+          </v-card-media>
+          <v-card-media v-if="!project.demo">
+            <v-img contain max-height="500px" :src="project.demo_image"></v-img>
+          </v-card-media>
+          <v-card-text>
+            <h3 class="headline mb-0">
+              <span>Technology</span>
+              <span class="right" >Role</span>
+            </h3>
+            <v-chip color="green" text-color="white">{{project.tech.tech1}}</v-chip>
+            <v-chip color="green" text-color="white">{{project.tech.tech2}}</v-chip>
+            <v-chip class="right" color="green" text-color="white">{{project.role}}</v-chip>
+          </v-card-text>
         </v-card>
       </v-dialog>
     </v-layout>
@@ -39,142 +69,112 @@
 </template>
 
 <script>
-import { PlyrVideo } from "vue-plyr";
 
 export default {
   metaInfo: {
-    title: "Video Portfolio",
-    titleTemplate: "%s ← Eldin's Space",
+    title: 'AI Portfolio',
+    titleTemplate: "%s ← Gael's Space",
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        name: "description",
+        name: 'description',
         content:
-          "Eldin Zaimovic's Services Adobe Premire After Effects Video Ad's Social Media Logo Animation Instagram Facebook Video Editing Advetising"
+          "Gael Courmont's AI portfolio"
       },
-      { charset: "utf-8" },
-      { property: "og:title", content: "Eldin' Space" },
-      { property: "og:site_name", content: "Eldin' Space" },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://eldin.space" },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: "Gael' Space" },
+      { property: 'og:site_name', content: "Gael' Space" },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://Gael.space' },
       {
-        property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
-      },
-      {
-        property: "og:description",
-        content:
-          "Eldin Zaimovic's Services Adobe Premire After Effects Video Ad's Social Media Logo Animation Instagram Facebook Video Editing Advetising"
+        property: 'og:description',
+        content: "Gael Courmont's AI portfolio"
       }
     ]
   },
-  components: { plyr: PlyrVideo },
-  data() {
+  data () {
     return {
       dialog: false,
-      videos: [
+      AI: [
         {
           dialog: false,
-          title: "Vila Design Promo video",
-          href: "https://www.youtube.com/embed/XP8j7NA_wzc",
-          type: "text/html",
-          youtube: "XP8j7NA_wzc",
-          poster: "https://img.youtube.com/vi/XP8j7NA_wzc/maxresdefault.jpg"
+          title: 'Traffic counting',
+          poster: 'https://i.imgur.com/1MhuQLW.png?1',
+          demo: true,
+          href: 'https://youtube.com/embed/jEsRzpme1XA',
+          description: 'This project have been made for the computer vision course at ISEN.\n' +
+            '\n' +
+            'The project is to make a traffic count model in order to count the number of cars,bus etc passing througha line on a road.\n' +
+            '\n' +
+            'In order to achieve that we will mainly use a pretrained yolo model and a sort algorithm to track cars.',
+          link: 'https://colab.research.google.com/drive/1igAgpQZQFP0EHjm2hxBEQx4OrUyqupHz?usp=sharing',
+          role: 'Alone project',
+          tech: {
+            tech1: 'YOLOv5',
+            tech2: 'Pytorch'
+          }
         },
         {
           dialog: false,
-          title: "Pushartist Promo video",
-          href: "https://www.youtube.com/embed/PZnn1fDUb6U",
-          type: "text/html",
-          youtube: "PZnn1fDUb6U",
-          poster: "https://img.youtube.com/vi/PZnn1fDUb6U/maxresdefault.jpg"
+          title: 'Cats and dogs recognition',
+          poster: 'https://i.imgur.com/MMRovwB.jpg',
+          demo: false,
+          demo_image: 'https://i.imgur.com/p72XuJu.png',
+          href: '',
+          description: 'Cats and dog recognition model made by 3 student at isen during 2021-2022 first semester. the goal was to make a poc and research about the best algorithm and technique of image classification available',
+          link: 'https://github.com/gael-courmont/Cats_and_dogs_recognition',
+          role: 'Developper',
+          tech: {
+            tech1: 'Pytorch',
+            tech2: 'Resnet'
+          }
         },
         {
           dialog: false,
-          title: "Unbroken Designs Instagram Promo video",
-          href: "https://www.youtube.com/embed/KfxHI3vwALk",
-          type: "text/html",
-          youtube: "KfxHI3vwALk",
-          poster: "https://img.youtube.com/vi/KfxHI3vwALk/maxresdefault.jpg"
-        },
-        {
-          dialog: false,
-          title: "EEVOY APP Promo",
-          href: "https://www.youtube.com/embed/JEhpsP75STk",
-          type: "text/html",
-          youtube: "JEhpsP75STk",
-          poster: "https://i.imgur.com/7CLqR2o.png"
-        },
-        {
-          dialog: false,
-          title: "Patty Boland's Party video",
-          href: "https://www.youtube.com/embed/5zB4FIkhFHk",
-          type: "text/html",
-          youtube: "5zB4FIkhFHk",
-          poster: "https://img.youtube.com/vi/5zB4FIkhFHk/maxresdefault.jpg"
-        },
-        {
-          dialog: false,
-          title: "Montenegro Summer 2017",
-          href: "https://www.youtube.com/embed/kZahccWTpGc",
-          type: "text/html",
-          youtube: "kZahccWTpGc",
-          poster: "https://i.imgur.com/4yTFAlM.jpg"
-        },
-        {
-          dialog: false,
-          title: "VilaShirts Promo video",
-          href: "https://www.youtube.com/embed/SZVMKtEORRw",
-          type: "text/html",
-          youtube: "SZVMKtEORRw",
-          poster: "https://i.imgur.com/POCbX1B.jpg"
-        },
-        {
-          dialog: false,
-          title: "Albania Durres Summer 2018",
-          href: "https://www.youtube.com/embed/jd9pDFaRDKI",
-          type: "text/html",
-          youtube: "jd9pDFaRDKI",
-          poster: "https://img.youtube.com/vi/jd9pDFaRDKI/maxresdefault.jpg"
-        },
-        {
-          dialog: false,
-          title: "Matricar Instagram Promo video",
-          href: "https://www.youtube.com/embed/S-2hNuuwmpY",
-          type: "text/html",
-          youtube: "S-2hNuuwmpY",
-          poster: "https://img.youtube.com/vi/S-2hNuuwmpY/maxresdefault.jpg"
-        },
-        {
-          dialog: false,
-          title: "Vila Design Glitch Logo Animation",
-          href: "https://www.youtube.com/embed/SrX8T2G6bew",
-          type: "text/html",
-          youtube: "SrX8T2G6bew",
-          poster: "https://img.youtube.com/vi/SrX8T2G6bew/maxresdefault.jpg"
-        },
-        {
-          dialog: false,
-          title: "Splash logo animation",
-          href: "https://www.youtube.com/embed/vBAZpwtq08I",
-          type: "text/html",
-          youtube: "vBAZpwtq08I",
-          poster: "https://i.imgur.com/3jK0rTs.png"
-        },
-        {
-          dialog: false,
-          title: "Julie Lindh CBD Infusion Facial",
-          href: "https://www.youtube.com/embed/9qFQMV9IJ9I",
-          type: "text/html",
-          youtube: "9qFQMV9IJ9I",
-          poster: "https://img.youtube.com/vi/9qFQMV9IJ9I/maxresdefault.jpg"
+          title: 'Falling detection',
+          poster: 'https://i.imgur.com/isbVJv8.png',
+          demo: false,
+          demo_image: 'https://i.imgur.com/6GvNoG2.gif',
+          href: '',
+          description: 'A 6 week project made by a team of 4 ISEN student.' +
+            ' The goal here was to do a poc of an AI capable of recognizing dangerous comportement.' +
+            ' Moreover hidden goal was to test training an ai onto "virtual data". in that purpose we used unity to make data and train our AI onto it. ' +
+            'We focused on falling person detection since our model was destined to an homecare assistant.',
+          link: 'https://github.com/gael-courmont/Falling_detection/tree/main',
+          role: 'Python/Unity Developper',
+          tech: {
+            tech1: 'UNITY',
+            tech2: 'Python',
+            tech3: 'Pytorch'
+          }
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style  scoped>
 @import "../../../node_modules/vue-plyr/dist/vue-plyr.css";
+.cardTitle{
+  text-align: center;
+  color: green ;
+  font-size: x-large;
+  justify-content: center;
+}
+.iframe-wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+  overflow: hidden;
+  margin: 3%;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>

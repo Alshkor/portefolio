@@ -19,42 +19,38 @@
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader";
-import TheFooter from "./components/TheFooter";
+import TheHeader from './components/TheHeader'
+import TheFooter from './components/TheFooter'
 
 export default {
-  name: "App",
+  name: 'App',
   metaInfo: {
-    title: "Home",
-    titleTemplate: "%s ← Eldin's Space",
+    title: 'Home',
+    titleTemplate: "%s ← Gael's Space",
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "description", content: "Eldin Zaimovic's Portfolio" },
-      { charset: "utf-8" },
-      { property: "og:title", content: "Eldin' Space" },
-      { property: "og:site_name", content: "Eldin' Space" },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://eldin.space" },
-      {
-        property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
-      },
-      { property: "og:description", content: "Eldin Zaimovic's Portfolio" }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'description', content: "Gael Courmont's Portfolio" },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: "Gael' Space" },
+      { property: 'og:site_name', content: "Gael' Space" },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://Gael.space' },
+      { property: 'og:description', content: "Gael Courmont's Portfolio" }
     ]
   },
   components: {
     TheHeader,
     TheFooter
   },
-  data() {
-    return { goDark: false };
+  data () {
+    return { goDark: false }
   },
   methods: {
-    updateTheme(updatedTheme) {
-      this.goDark = !updatedTheme;
+    updateTheme (updatedTheme) {
+      this.goDark = !updatedTheme
     }
   }
-};
+}
 </script>
 <style>
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css";
