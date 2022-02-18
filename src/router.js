@@ -39,7 +39,7 @@ export default new Router({
         import( /* webpackChunkName: "about" */ "./views/Portfolio/AI.vue")
     },
     {
-      path: "/portfolio/games",
+      path: "/portfolio/Games",
       name: "graphicPortfolio",
       component: () =>
         import( /* webpackChunkName: "about" */ "./views/Portfolio/Games.vue")

@@ -27,8 +27,8 @@
     <v-toolbar flat dense color="transparent" scroll-off-screen>
       <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="headline">
-        <span class="font-weight-light">Gael</span>
-        <span class="green--text">Courmont</span>
+        <span class="font-weight-light">Axel</span>
+        <span class="red--text">Courmont</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn @click="changeTheme" depressed small icon class="hidden-md-and-up">
@@ -36,10 +36,10 @@
         <v-icon v-else>fas fa-moon</v-icon>
       </v-btn>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat to="/" active-class="green--text headline">Home</v-btn>
-        <v-btn flat to="/resume" active-class="green--text headline">Resume</v-btn>
-        <v-btn flat to="/portfolio" active-class="green--text headline">Portfolio</v-btn>
-        <v-btn flat to="/contact" active-class="green--text headline">Contact</v-btn>
+        <v-btn flat to="/" active-class="red--text headline">Home</v-btn>
+        <v-btn flat to="/resume" active-class="red--text headline">Resume</v-btn>
+        <v-btn flat to="/portfolio" active-class="red--text headline">Portfolio</v-btn>
+        <v-btn flat to="/contact" active-class="red--text headline">Contact</v-btn>
         <v-btn @click="changeTheme" depressed small icon>
           <v-icon v-if="goDark==true">fas fa-sun</v-icon>
           <v-icon v-else>fas fa-moon</v-icon>

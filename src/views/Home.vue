@@ -23,7 +23,7 @@
 
     <br>
 
-    <vue-typer class="headline" :repeat="0" text="Gael Courmont"></vue-typer>
+    <vue-typer class="headline" :repeat="0" text="Axel Courmont"></vue-typer>
     <vue-typer
       :text="text1"
       :repeat="Infinity"
@@ -44,17 +44,17 @@
           <div>
             <h3 class="headline mb-0">
               <span>About</span>
-              <span class="green--text">Me</span>
+              <span class="red--text">Me</span>
             </h3>
             <div>
               <p>
-                Hello! I’m Gael Courmont. I'm a Engineering student who
+                Hello! I’m Axel Courmont. I'm a Engineering student who
                 is passionate about
                 <span
-                  class="green--text font-weight-bold"
-                >Video Games</span> and 
+                  class="red--text font-weight-bold"
+                >Video Games</span> and
                 <span
-                  class="green--text font-weight-bold"
+                  class="red--text font-weight-bold"
                 >AI</span>, building great gaming experience,
                 fighting for simplicity over complexity and constantly learning.
                 When I'm not coding, you'll find me listening to music or travelling through europe.
@@ -70,7 +70,7 @@
             fab
             dark
             outline
-            color="green"
+            color="fc3e40"
             :href="icon.href"
             target="_blank"
           >
@@ -86,7 +86,7 @@
             fab
             dark
             outline
-            color="green"
+            color="fc3e40"
             :href="icon.href"
             target="_blank"
           >
@@ -105,20 +105,20 @@ import VueCompareImage from "vue-compare-image";
 export default {
   metaInfo: {
     title: "Home",
-    titleTemplate: "%s ← Gael's Space",
+    titleTemplate: "%s ← Axel's Space",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "description", content: "Gael Courmont's Portfolio" },
+      { name: "description", content: "Axel Courmont's Portfolio" },
       { charset: "utf-8" },
-      { property: "og:title", content: "Gael' Space" },
-      { property: "og:site_name", content: "Gael' Space" },
+      { property: "og:title", content: "Axel' Space" },
+      { property: "og:site_name", content: "Axel' Space" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://Gael.space" },
+      { property: "og:url", content: "https://Axel.space" },
       {
         property: "og:image",
         content: "https://i.imgur.com/Dcz2PGx.jpg"
       },
-      { property: "og:description", content: "Gael Courmont's Portfolio" }
+      { property: "og:description", content: "Axel Courmont's Portfolio" }
     ]
   },
   components: {
@@ -128,7 +128,7 @@ export default {
   data() {
     return {
       icons: [
-        { href: "https://github.com/gael-courmont", icon: "fab fa-github" },
+        { href: "https://github.com/Alshkor", icon: "fab fa-github" },
         {
           href: "https://www.linkedin.com/in/gael-courmont-8a7906167",
           icon: "fab fa-linkedin-in"
@@ -162,21 +162,21 @@ export default {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .vue-typer .custom.char.typed {
-  color: green;
+  color: #fc3e40;
 }
 .vue-typer .custom.char.selected {
-  color: #e91e63;
+  color: #251ee9;
 }
 
 .vue-typer .custom.caret {
   animation: rocking 1s ease-in-out 0s infinite;
 }
 .vue-typer .custom.caret.typing {
-  background-color: green;
+  background-color: #fc3e40;
 }
 .vue-typer .custom.caret.selecting {
   display: inline-block;
-  background-color: #e91e63;
+  background-color: #251ee9;
 }
 </style>
 

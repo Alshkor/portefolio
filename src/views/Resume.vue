@@ -7,12 +7,12 @@
           <v-timeline-item color="green" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold green--text">SEPT 2016 -</div>
+                <div class="caption font-weight-bold green--text">SEPT 2020 -</div>
                 <div class="caption font-weight-bold green--text">PRESENT</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Ingeneer degree specialised in artificial intelligence</strong>
-                <div class="caption mb-2">ISEN LILLE</div>
+                <strong>Ingeneer degree specialised in digital interaction and video games.</strong>
+                <div class="caption mb-2">ENSIIE Évry-Courcouronnes</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -20,12 +20,12 @@
           <v-timeline-item color="green" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold green--text">SEP 2016 -</div>
+                <div class="caption font-weight-bold green--text">SEP 2018 -</div>
                 <div class="caption font-weight-bold green--text">JUNE 2020</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Bachelor of technologie</strong>
-                <div class="caption mb-2">ISEN LILLE</div>
+                <strong>Mathematics studies</strong>
+                <div class="caption mb-2">Faidherbe Lille</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -33,10 +33,11 @@
           <v-timeline-item color="green" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold green--text">SEP 2016 -</div>
+                <div class="caption font-weight-bold green--text">SEP 2015 -</div>
+                <div class="caption font-weight-bold green--text">JUNE 2018</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Scientifique Baccalauréat with sport option</strong>
+                <strong>Scientifique Baccalauréat</strong>
                 <div class="caption mb-2">Robespierre highscool Arras</div>
               </v-flex>
             </v-layout>
@@ -51,12 +52,12 @@
           <v-timeline-item color="green" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold green--text">JUNE 2021 -</div>
+                <div class="caption font-weight-bold green--text">JUNE 2021</div>
                 <div class="caption font-weight-bold green--text">SEPTEMBER 2021</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>DATA SCIENTIST FOR DEPLOIEMENT PURPOSE</strong>
-                <div class="caption mb-2">Diskyver</div>
+                <strong>Video game startup creation</strong>
+                <div class="caption mb-2">Magia</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -64,28 +65,16 @@
           <v-timeline-item color="green" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold green--text">JUNE 2019 -</div>
-                <div class="caption font-weight-bold green--text">SEPTEMBER 2019</div>
+                <div class="caption font-weight-bold green--text">JULY 2020</div>
+                <div class="caption font-weight-bold green--text">SEPTEMBER 2020</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>General assistant</strong>
-                <div class="caption mb-2">prince’s house hotel (Scotland)</div>
+                <strong>Stock management</strong>
+                <div class="caption mb-2">Pharmacy aubignoise</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
 
-          <v-timeline-item color="green" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold green--text">JUNE 2018 -</div>
-                <div class="caption font-weight-bold green--text">JULY 2018</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Manufactory internship</strong>
-                <div class="caption mb-2">DUVIC</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
         </v-timeline>
       </v-card-text>
     </v-flex>
@@ -94,28 +83,27 @@
         <h2>
           <span>Software</span>
 
-          <span class="green--text">Skills</span>
+          <span class="red--text">Skills</span>
         </h2>
         <br>
         <strong>Unity</strong>
         <v-progress-linear v-model="buffer1" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
-        <strong> Unreal Engine</strong>
-        <v-progress-linear v-model="buffer2" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
         <strong>Unity XR</strong>
         <v-progress-linear v-model="buffer3" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
       </v-flex>
       <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
         <h2>
           <span>Coding</span>
-          <span class="green--text">Skills</span>
+          <span class="blue--text">Skills</span>
         </h2>
         <br>
-        <strong>Python</strong>
-        <v-progress-linear v-model="buffer4" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
         <strong>C++/C#/JAVA</strong>
         <v-progress-linear v-model="buffer5" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
-        <strong>HTML/css/js</strong>
+        <strong>Ocaml/Prolog</strong>
         <v-progress-linear v-model="buffer6" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
+
+        <strong>HTML/css/js</strong>
+        <v-progress-linear v-model="buffer7" :buffer-value="bufferValue" color="green" height="16"></v-progress-linear>
       </v-flex>
       <div class="mt-4 pt-2">
         <v-btn
@@ -170,6 +158,7 @@ export default {
       buffer4: 0,
       buffer5: 0,
       buffer6: 0,
+      buffer7: 0,
       bufferValue: 100,
       interval: 0
     };
@@ -191,6 +180,7 @@ export default {
         this.buffer4 = 90;
         this.buffer5 = 80;
         this.buffer6 = 70;
+        this.buffer7 = 60;
       }, 800);
     }
   }
