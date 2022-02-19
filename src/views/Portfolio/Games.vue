@@ -1,8 +1,8 @@
 <template>
   <v-container grid-list-xl>
     <h2 class="pl-4">
-      <span>Graphic</span>
-      <span class="green--text">Portfolio</span>
+      <span>Games</span>
+      <span class="red--text">Portfolio</span>
     </h2>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-dialog
@@ -29,11 +29,11 @@
           <v-card-title class="cardTitle">
             {{game.title}}
           </v-card-title>
-          <v-card-text>
+          <v-card-text v-if="!project.no_link">
             <h3>Link</h3>
           </v-card-text>
-          <v-card-text>
-            <a :href="game.link">{{game.link}}</a>
+          <v-card-text v-if="!project.no_link">
+            <a :href="project.link">{{project.link}}</a>
           </v-card-text>
           <v-card-text>
             <h3>Description</h3>
@@ -50,16 +50,17 @@
             </div>
           </v-card-media>
           <v-card-media v-if="!game.demo">
-            <v-img contain max-height="500px" :src="game.poster"></v-img>
+            <v-img contain max-height="500px" :src="game.demo_image"></v-img>
           </v-card-media>
           <v-card-text>
               <h3 class="headline mb-0">
                 <span>Technology</span>
                 <span class="right" >Role</span>
               </h3>
-              <v-chip color="green" text-color="white">{{game.tech.tech1}}</v-chip>
-              <v-chip color="green" text-color="white">{{game.tech.tech2}}</v-chip>
-              <v-chip class="right" color="green" text-color="white">{{game.role}}</v-chip>
+            <span :key="tech" v-for="tech in game.tech">
+              <v-chip color="blue" text-color="white">{{tech}}</v-chip>
+            </span>
+              <v-chip class="right" color="blue" text-color="white">{{game.role}}</v-chip>
           </v-card-text>
         </v-card>
       </v-dialog>
@@ -72,23 +73,23 @@
 export default {
   metaInfo: {
     title: 'Games Portfolio ',
-    titleTemplate: "%s ← Gael's Space",
+    titleTemplate: "%s ← Axel's Space",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'description',
         content:
-          'Gael Courmont games portfolio'
+          'Axel Courmont games portfolio'
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Gael' Space" },
-      { property: 'og:site_name', content: "Gael' Space" },
+      { property: 'og:title', content: "Axel's Space" },
+      { property: 'og:site_name', content: "Axel's Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://gael.space' },
+      { property: 'og:url', content: 'https://axel.space' },
       {
         property: 'og:description',
         content:
-          'Gael Courmont games portfolio'
+          'Axel Courmont games portfolio'
       }
     ]
   },
@@ -106,52 +107,84 @@ export default {
           description: 'Face the dangers of an eerie train with the help of an angel and a demon, and try to reach the exit ! Game made during the Global Game Jam 2022 by a team of 6. 2 graphic designer, 3 developers and 1 game designer',
           link: 'https://globalgamejam.org/2022/games/fireflies-express-1',
           role: 'Unity Developper',
-          tech: {
-            tech1: 'UNITY',
-            tech2: '2D'
-          }
+          tech: [
+            'UNITY',
+            '2D'
+          ]
         },
         {
           dialog: false,
-          title: 'Pool game',
-          poster: 'https://i.imgur.com/Yo3nFht.jpg',
+          title: 'The Christmas carnage',
+          poster: 'https://i.imgur.com/GvZujJF.png',
           demo: true,
-          href: 'https://youtube.com/embed/imet3Kkd9sQ',
-          description: 'This project is a small and simple pool game made by myself and 2 other student at ISEN during an end of course project. The goal was to use every aspect of unity 3D development we learnt during that session',
-          link: 'https://github.com/gael-courmont/Unity_module',
-          role: 'Unity Developer',
-          tech: {
-            tech1: 'UNITY',
-            tech2: '3D'
-          }
-        },
-        {
-          dialog: false,
-          title: 'Chicken shooter VR',
-          poster: 'https://i.imgur.com/isbVJv8.png',
-          demo: true,
-          href: 'https://youtube.com/embed/aicG3RF1kxE',
-          description: 'A bunch of chicken is invading the far west. Pick up your colt and shoot them before they peck all your wheat. This game was made in unity VR by myself and 2 other students during an end of course project.',
-          link: 'https://github.com/gael-courmont/vr_fps',
+          href: 'https://youtube.com/embed/9H2mbBLPEwA',
+          description: 'If your dream is to destroy every snowman you see, this game is for you. This project was for a video game course with 2 other developer.',
+          link: 'https://github.com/Alshkor/Projet-DJV',
           role: 'Unity Developper',
-          tech: {
-            tech1: 'UNITY',
-            tech2: 'VR'
-          }
+          tech: [
+            'UNITY',
+            '3D'
+          ]
         },
         {
           dialog: false,
-          title: 'Gurdil',
-          poster: 'https://i.imgur.com/wv2v2bv.jpg',
+          title: 'The Christmas carnage VR',
+          poster: 'https://i.imgur.com/BADMyQB.png',
+          demo: true,
+          href: 'https://youtube.com/embed/O10XBLTC3tc',
+          description: 'As an addition to my course, I\'ve followed an online course on basics of virtual reality. As a project to test my abilities, I made The christmas carnage playable in VR with Oculus Quest 2.',
+          no_link: true,
+          link: 'https://github.com/Alshkor/Projet-DJV',
+          role: 'Unity Developper',
+          tech: [
+            'UNITY',
+            '3D'
+          ]
+        },
+        {
+          dialog: false,
+          title: 'Brocantes et coeurs brisés',
+          poster: 'https://imgur.com/j0YF0WK.png',
           demo: false,
+          demo_image: 'https://imgur.com/4Poy5y5.png',
           href: '',
-          description: 'As a personal project i am developping a hack an slash type of game since it is one of my favorite type of game. I started devellopping it in early 2022.',
-          link: 'https://github.com/gael-courmont/Gurdil',
+          description: 'Sell your goods to clients and talk with them to discover their stories. You may want to be the most popular or the richest antique collector. I made this game during a gamejam (Unijam) in October 2021 with 1 other developer, 2 game designer and 2 graphic designers.',
+          link: 'https://biscuitprime.itch.io/brocante-coeurs-brises',
           role: 'Unity Developper',
-          tech: {
-            tech1: 'UNITY',
-            tech2: '3D'
-          }
+          tech: [
+            'UNITY',
+            '2D'
+          ]
+        },
+        {
+          dialog: false,
+          title: 'Magia',
+          poster: 'https://imgur.com/nX6Nlnt.png',
+          demo: true,
+          href: 'https://youtube.com/embed/xdFi7ld--m8',
+          description: 'A 3D-exploration game which offers a lot of liberty to the player to explore the world, with only one goal : reach the end of the world ! This game was made during a summer school where, with 2 other students, we were experiencing entrepreneurship for 2 months and we simulating our video game studio.',
+          link: 'https://magiasunheat.itch.io/aux-confins-du-monde',
+          role: 'Unity Developper',
+          tech: [
+            'UNITY',
+            '3D'
+          ]
+        },
+        {
+          dialog: false,
+          title: 'Envoronment line',
+          poster: 'https://i.imgur.com/AhuS5LF.jpg',
+          demo: false,
+          demo_image: 'https://i.imgur.com/rt2Eozx.png',
+          href: '',
+          description: 'For my first project in school, I created a small board game (playable on terminal or in an interface) in C with 3 other students.',
+          no_link: true,
+          link: '',
+          role: 'Unity Developper',
+          tech: [
+            'C',
+            'GTK'
+          ]
         }
       ]
     }
@@ -163,7 +196,7 @@ export default {
 
 .cardTitle{
   text-align: center;
-  color: green ;
+  color: #0080ff;
   font-size: x-large;
   justify-content: center;
 }

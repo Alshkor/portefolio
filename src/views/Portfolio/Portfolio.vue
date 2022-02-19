@@ -33,14 +33,14 @@ export default {
           "Gael Courmont's Portfolio Web Development Video game development Data Science"
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Gael' Space" },
-      { property: 'og:site_name', content: "Gael' Space" },
+      { property: 'og:title', content: "Axel' Space" },
+      { property: 'og:site_name', content: "Axel' Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://Gael.space' },
+      { property: 'og:url', content: 'https://Axel.space' },
       {
         property: 'og:description',
         content:
-          "Gael Courmont's Portfolio Web Development Video game development Data Science"
+          "Axel Courmont's Portfolio Web Development Video game development"
       }
     ]
   },
@@ -50,11 +50,6 @@ export default {
         {
           src: 'https://as1.ftcdn.net/v2/jpg/01/71/29/48/1000_F_171294824_FDLwEWTzlfVr8iE0qojO0mmai44fdbIj.jpg',
           title: 'Games'
-        },
-
-        {
-          src: 'https://static1.bigstockphoto.com/7/8/3/large2/387255466.jpg',
-          title: 'AI'
         },
         {
           src: 'https://i.imgur.com/GvTt5GG.png',

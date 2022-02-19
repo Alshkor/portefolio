@@ -33,12 +33,6 @@ export default new Router({
         import(/* webpackChunkName: "about" */ './views/Portfolio/Portfolio.vue')
   },
   {
-    path: '/portfolio/AI',
-    name: 'AIPortfolio',
-    component: () =>
-        import(/* webpackChunkName: "about" */ './views/Portfolio/AI.vue')
-  },
-  {
     path: '/portfolio/games',
     name: 'GamesPortfolio',
     component: () =>
