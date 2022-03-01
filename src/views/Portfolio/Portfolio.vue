@@ -24,19 +24,19 @@
 export default {
   metaInfo: {
     title: 'Portfolio',
-    titleTemplate: "%s ← Gael's Space",
+    titleTemplate: "%s ← Axel's Space",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'description',
         content:
-          "Gael Courmont's Portfolio Web Development Video game development Data Science"
+          "Axel Courmont's Portfolio Web Development Video game development Data Science"
       },
       { charset: 'utf-8' },
       { property: 'og:title', content: "Axel' Space" },
       { property: 'og:site_name', content: "Axel' Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://Axel.space' },
+      { property: 'og:url', content: 'https://axel.space' },
       {
         property: 'og:description',
         content:

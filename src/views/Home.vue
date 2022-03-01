@@ -104,21 +104,21 @@ import VueCompareImage from 'vue-compare-image'
 
 export default {
   metaInfo: {
-    title: "Home",
+    title: 'Home',
     titleTemplate: "%s ← Axel's Space",
     meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "description", content: "Axel Courmont's Portfolio" },
-      { charset: "utf-8" },
-      { property: "og:title", content: "Axel' Space" },
-      { property: "og:site_name", content: "Axel' Space" },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://Axel.space" },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'description', content: 'Axel Courmont\'s Portfolio' },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: 'Axel\' Space' },
+      { property: 'og:site_name', content: 'Axel\' Space' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://Axel.space' },
       {
-        property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
+        property: 'og:image',
+        content: 'https://i.imgur.com/Dcz2PGx.jpg'
       },
-      { property: "og:description", content: "Axel Courmont's Portfolio" }
+      { property: 'og:description', content: 'Axel Courmont\'s Portfolio' }
     ]
   },
   components: {
@@ -128,9 +128,9 @@ export default {
   data () {
     return {
       icons: [
-        { href: "https://github.com/Alshkor", icon: "fab fa-github" },
+        { href: 'https://github.com/Alshkor', icon: 'fab fa-github' },
         {
-          href: 'https://www.linkedin.com/in/gael-courmont-8a7906167',
+          href: 'https://www.linkedin.com/in/axel-courmont-2803a21b7/',
           icon: 'fab fa-linkedin-in'
         }
       ],
@@ -179,4 +179,3 @@ export default {
   background-color: #251ee9;
 }
 </style>
-

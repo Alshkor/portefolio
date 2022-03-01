@@ -92,23 +92,23 @@ import {
 export default {
   metaInfo: {
     title: 'Contact',
-    titleTemplate: "%s ← Gael's Space",
+    titleTemplate: "%s ← Axel's Space",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'description',
         content:
-          "Gael Courmont's Contact Internship ContactMe"
+          "Axel Courmont's Contact Internship ContactMe"
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Gael' Space" },
-      { property: 'og:site_name', content: "Gael' Space" },
+      { property: 'og:title', content: "Axel' Space" },
+      { property: 'og:site_name', content: "Axel' Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://Gael.space' },
+      { property: 'og:url', content: 'https://axel.space' },
       {
         property: 'og:description',
         content:
-          "Gael Courmont's Contact Internship ContactMe"
+          "Axel Courmont's Contact Internship ContactMe"
       }
     ]
   },

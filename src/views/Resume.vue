@@ -135,10 +135,10 @@ export default {
             'Unity Python Java C# Pytorch keras Vue'
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Gael' Space" },
-      { property: 'og:site_name', content: "Gael' Space" },
+      { property: 'og:title', content: "Axel' Space" },
+      { property: 'og:site_name', content: "Axel' Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://Gael.space' },
+      { property: 'og:url', content: 'https://Axel.space' },
       {
         property: 'og:description',
         content:

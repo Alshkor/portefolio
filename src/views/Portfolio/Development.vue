@@ -67,23 +67,23 @@
 export default {
   metaInfo: {
     title: 'Development Portfolio',
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Axel's Space",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'description',
         content:
-          'Gael courmont Development portefolio'
+          'Axel Courmont Development portefolio'
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Eldin' Space" },
-      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:title', content: "Axel' Space" },
+      { property: 'og:site_name', content: "Axel' Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://axel.space' },
       {
         property: 'og:description',
         content:
-          'Gael courmont Development portfolio'
+          'Axel courmont Development portfolio'
       }
     ]
   },
