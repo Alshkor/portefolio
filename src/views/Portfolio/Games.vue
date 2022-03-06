@@ -85,7 +85,7 @@ export default {
       { property: 'og:title', content: "Axel's Space" },
       { property: 'og:site_name', content: "Axel's Space" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://axel.space' },
+      { property: 'og:url', content: 'https://portfolio-axel.herokuapp.com' },
       {
         property: 'og:description',
         content:
