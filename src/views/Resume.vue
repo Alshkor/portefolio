@@ -108,7 +108,7 @@
       </v-flex>
       <div class="mt-4 pt-2">
         <v-btn
-          href="https://drive.google.com/file/d/1ehAUFWDYhre0hJ-C49_euAnEHCc907Yt/view?usp=sharing"
+          href="https://drive.google.com/drive/folders/1kfUaCuaXP4YQjwJxY7gxEh9UYHm4SNKH?usp=sharing"
           target="_blank"
           color="blue"
           dark

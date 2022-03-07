@@ -172,7 +172,7 @@ export default {
         },
         {
           dialog: false,
-          title: 'Envoronment line',
+          title: 'Environment line',
           poster: 'https://i.imgur.com/AhuS5LF.jpg',
           demo: false,
           demo_image: 'https://i.imgur.com/rt2Eozx.png',
