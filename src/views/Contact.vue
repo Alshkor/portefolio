@@ -9,7 +9,7 @@
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="blue" left>fas fa-map-marker-alt</v-icon>
           <span>Chicoutimi,&nbsp;</span>
-          <span class="blue--text">France</span>
+          <span class="blue--text">Québec</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="blue" left>fas fa-envelope</v-icon>
