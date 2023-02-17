@@ -29,18 +29,20 @@
           <v-card-title class="cardTitle">
             {{project.title}}
           </v-card-title>
-          <v-card-text v-if="!project.no_link">
-            <h3>Link</h3>
-          </v-card-text>
-          <v-card-text v-if="!project.no_link">
-            <a :href="project.link">{{project.link}}</a>
-          </v-card-text>
           <v-card-text>
             <h3>Description</h3>
           </v-card-text>
           <v-card-text>
             <p>{{project.description}}</p>
           </v-card-text>
+          <v-card-text v-if="project.has_link">
+            <h3>Link</h3>
+          </v-card-text>
+          <v-card-text v-if="project.has_link">
+            <p>{{project.descr_link}}</p><a :href="project.link">{{project.link}}</a>
+          </v-card-text>
+
+
           <v-card-text>
             <h3>Demo</h3>
           </v-card-text>
@@ -57,6 +59,19 @@
             </span>
             <v-chip class="right" color="blue" text-color="white">{{project.role}}</v-chip>
           </v-card-text>
+
+          <v-card-text  v-if="project.team.length > 0">
+            <h3>Team</h3>
+          </v-card-text>
+
+          <v-card-text>
+            <v-flex v-for="teammate in project.team" :key="teammate.name">
+
+              <a :href="teammate.link">{{teammate.name}}</a> <h> | {{teammate.role}}</h>
+
+            </v-flex>
+          </v-card-text>
+
         </v-card>
       </v-dialog>
     </v-layout>
@@ -93,14 +108,48 @@ export default {
       projects: [
         {
           dialog: false,
-          title: 'This Website',
+          title: 'Moteur physique en C++',
+          poster: 'https://i.imgur.com/d60gGYP.png',
+          demo: false,
+          demo_image: 'https://i.imgur.com/d60gGYP.png',
+          href: '',
+          description: 'Nous avons créé un moteur physique en C++ dans le cadre du cours de Mathématiques et Physiques dans le jeux vidéo ' +
+            'à l\'UQAC pendant ma dernière année d\'école d\'ingénieur.',
+          has_link: false,
+          descr_link: 'Template du portfolio : ',
+          link: 'https://github.com/Alshkor/Projet_mathematiques_physiques',
+          role: 'C++ Developer',
+          team: [
+            {
+              name: 'Deryne Four',
+              link: 'https://github.com/Deryne',
+              role: 'C++ Developper'
+            },
+            {
+              name: 'Pierre Fourré',
+              link: 'https://github.com/Fourrep',
+              role: 'C++ Developper'
+            }
+          ],
+          tech: [
+            'C++',
+            'OpenGL',
+            'GLFW'
+          ]
+        },
+        {
+          dialog: false,
+          title: 'Ce site',
           poster: 'https://i.imgur.com/gjq1yyQ.png',
           demo: false,
           demo_image: 'https://i.imgur.com/gjq1yyQ.png',
           href: '',
-          description: 'This website was made by my brother and i  in order to show our work and especially video game production.',
-          link: 'https://github.com/Alshkor/portfolio',
+          description: 'Ce site a été réalisé grâce au template de Eldin Zaimovic pour montrer mon travail en développement de jeux vidéo.',
+          has_link: true,
+          descr_link: 'Template du portfolio : ',
+          link: 'https://eldin.space/',
           role: 'Vue developer',
+          team: [],
           tech: [
             'Vue',
             'Web design',
@@ -115,10 +164,19 @@ export default {
           demo: false,
           demo_image: 'https://i.imgur.com/1Mf9MVa.png',
           href: '',
-          description: 'We create a 3d engine in C++ using only the SDL library.',
-          no_link: true,
+          description: 'Nous avons créé un moteur graphique en utilisant uniquement la bibliothèque graphique 2D SDL et le principe de ' +
+            'rasterisation.',
+          has_link: false,
           link: 'https://github.com/Alshkor/portefolioduq',
-          role: 'C++ developer',
+          descr_link: 'Template du portfolio : ',
+          role: 'Développeur C++',
+          team: [
+            {
+              name: 'Mathieu Baesen "Mathxxl"',
+              link: 'https://mathxxl.itch.io/',
+              role: 'C++ Developper'
+            }
+          ],
           tech: [
             'C++',
             'SDL'
@@ -131,10 +189,13 @@ export default {
           demo: false,
           demo_image: 'https://i.imgur.com/r7kgqXS.png',
           href: '',
-          description: 'We made a website about the game League of Legends were you can test your knowledge about the lore of the game, the game itself or the esport history.',
-          no_link: true,
+          description: 'Nous avons faits un site de quizz sur le jeu vidéo League of legend où vous pouvez tester vos connaissance' +
+            ' sur ce jeu (que ce soit l\'histoire, l\'esport ou le jeu en lui-même).',
+          has_link: false,
+          descr_link: 'Template du portfolio : ',
           link: '',
           role: 'Web developer',
+          team: [],
           tech: [
             'HTML',
             'PHP',

@@ -10,6 +10,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "@babel/core": "^7.20.12",
     "core-js": "^2.6.9",
     "express": "^4.17.3",
     "marked": "^0.7.0",
