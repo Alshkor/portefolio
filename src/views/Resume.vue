@@ -152,7 +152,7 @@
 export default {
   metaInfo: {
     title: 'Resume',
-    titleTemplate: "%s ← Gael's Space",
+    titleTemplate: "%s ← Axel's Space",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
