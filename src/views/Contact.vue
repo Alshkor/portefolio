@@ -8,7 +8,7 @@
         </h2>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="blue" left>fas fa-map-marker-alt</v-icon>
-          <span>Évry-Courcouronnes,&nbsp;</span>
+          <span>Chicoutimi,&nbsp;</span>
           <span class="blue--text">France</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
@@ -18,14 +18,14 @@
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="blue" left>fas fa-phone</v-icon>
-          <span>+387&nbsp;</span>
-          <span class="blue--text">+33 7 83 22 27 62</span>
+          <span>+33 </span>
+          <span class="blue--text">7 83 22 27 62</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="blue" left>fas fa-check</v-icon>
           <span>internship</span>
-          <span class="blue--text">Available</span>
-          <span> from may to august</span>
+          <span class="blue--text"> Disponible</span>
+          <span> à partir de juillet</span>
         </div>
       </v-flex>
 
