@@ -41,8 +41,6 @@
           <v-card-text v-if="project.has_link">
             <p>{{project.descr_link}}</p><a :href="project.link">{{project.link}}</a>
           </v-card-text>
-
-
           <v-card-text>
             <h3>Demo</h3>
           </v-card-text>

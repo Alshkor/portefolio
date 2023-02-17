@@ -135,10 +135,10 @@ export default {
         }
       ],
       text1: ['AI', 'Game Development', 'Programmer'],
-      leftImage: 'https://wallpaperaccess.com/full/279979.jpg',
-      rightImage: 'https://www.wallpapertip.com/wmimgs/35-356026_artificial-intelligence-logo-design.jpg',
-      leftImage2: 'https://wallpaperaccess.com/full/279979.jpg',
-      rightImage2: 'https://www.wallpapertip.com/wmimgs/35-356026_artificial-intelligence-logo-design.jpg',
+      leftImage: 'https://i.imgur.com/73U8Jd1.jpg',
+      rightImage: 'https://i.imgur.com/ScHwBri.jpg',
+      leftImage2: 'https://i.imgur.com/73U8Jd1.jpg',
+      rightImage2: 'https://i.imgur.com/ScHwBri.jpg',
       sliderLine: 0,
       hSize: 0,
       sliderPosition: 0.5
