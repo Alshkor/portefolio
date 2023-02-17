@@ -7,11 +7,24 @@
           <v-timeline-item color="blue" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">SEPT 2020 -</div>
-                <div class="caption font-weight-bold blue--text">PRESENT</div>
+                <div class="caption font-weight-bold blue--text">SETP 2022 -</div>
+                <div class="caption font-weight-bold blue--text">PRÉSENT</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Ingeneer degree specialised in digital interaction and video games.</strong>
+                <strong>Maitrise informatique spécialité jeux vidéo</strong>
+                <div class="caption mb-2">Université du Québec à Chicoutimi</div>
+              </v-flex>
+            </v-layout>
+          </v-timeline-item>
+
+          <v-timeline-item color="blue" small>
+            <v-layout pt-3>
+              <v-flex xs4>
+                <div class="caption font-weight-bold blue--text">SEPT 2020 -</div>
+                <div class="caption font-weight-bold blue--text">PRÉSENT</div>
+              </v-flex>
+              <v-flex class="pl-2">
+                <strong>Diplôme d'ingénieur en jeux vidéo et intéractions numériques</strong>
                 <div class="caption mb-2">ENSIIE Évry-Courcouronnes</div>
               </v-flex>
             </v-layout>
@@ -21,11 +34,11 @@
             <v-layout pt-3>
               <v-flex xs4>
                 <div class="caption font-weight-bold blue--text">SEP 2018 -</div>
-                <div class="caption font-weight-bold blue--text">JUNE 2020</div>
+                <div class="caption font-weight-bold blue--text">JUIN 2020</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Mathematics studies</strong>
-                <div class="caption mb-2">Faidherbe Lille</div>
+                <strong>École préparatoire spécialité mathématique</strong>
+                <div class="caption mb-2">Lycée Faidherbe à Lille</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -34,11 +47,11 @@
             <v-layout pt-3>
               <v-flex xs4>
                 <div class="caption font-weight-bold blue--text">SEP 2015 -</div>
-                <div class="caption font-weight-bold blue--text">JUNE 2018</div>
+                <div class="caption font-weight-bold blue--text">JUIN 2018</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Scientifique Baccalauréat</strong>
-                <div class="caption mb-2">Robespierre highscool Arras</div>
+                <strong>Baccalauréat scientifique</strong>
+                <div class="caption mb-2">Lycée Robespierre à Arras</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -52,11 +65,24 @@
           <v-timeline-item color="blue" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">JUNE 2021</div>
-                <div class="caption font-weight-bold blue--text">SEPTEMBER 2021</div>
+                <div class="caption font-weight-bold blue--text">MAI 2022</div>
+                <div class="caption font-weight-bold blue--text">AOUT 2022</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Video game startup creation</strong>
+                <strong>Recherche du processus de génération de maillages 3D de vêtements.</strong>
+                <div class="caption mb-2">ModaLive</div>
+              </v-flex>
+            </v-layout>
+          </v-timeline-item>
+
+          <v-timeline-item color="blue" small>
+            <v-layout pt-3>
+              <v-flex xs4>
+                <div class="caption font-weight-bold blue--text">JUIN 2021</div>
+                <div class="caption font-weight-bold blue--text">SEPTEMBRE 2021</div>
+              </v-flex>
+              <v-flex class="pl-2">
+                <strong>Création d'une startup dans le jeux vidéo</strong>
                 <div class="caption mb-2">Magia</div>
               </v-flex>
             </v-layout>
@@ -65,12 +91,12 @@
           <v-timeline-item color="blue" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">JULY 2020</div>
-                <div class="caption font-weight-bold blue--text">SEPTEMBER 2020</div>
+                <div class="caption font-weight-bold blue--text">JUILLET 2020</div>
+                <div class="caption font-weight-bold blue--text">SEPTEMBRE 2020</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Stock management</strong>
-                <div class="caption mb-2">Pharmacy aubignoise</div>
+                <strong>Gestion d'inventaire</strong>
+                <div class="caption mb-2">Pharmacie aubignoise</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -90,7 +116,7 @@
         <v-progress-linear v-model="buffer1" :buffer-value="bufferValue" color="blue" height="16"></v-progress-linear>
         <strong>Unity XR</strong>
         <v-progress-linear v-model="buffer3" :buffer-value="bufferValue" color="blue" height="16"></v-progress-linear>
-        <strong>Papyrus</strong>
+        <strong>UnrealEngine</strong>
         <v-progress-linear v-model="buffer4" :buffer-value="bufferValue" color="blue" height="16"></v-progress-linear>
       </v-flex>
       <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
@@ -114,7 +140,7 @@
           dark
           large
         >
-          Download Resume
+          Télécharger le CV
           <v-icon right dark>fas fa-file-download</v-icon>
         </v-btn>
       </div>
