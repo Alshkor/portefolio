@@ -2,7 +2,7 @@
   <v-container grid-list-xl>
     <h2 class="pl-4">
       <span>Games</span>
-      <span class="red--text">Portfolio</span>
+      <span class="red--text"> Portfolio</span>
     </h2>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-dialog
@@ -113,34 +113,152 @@ export default {
       project: [
         {
           dialog: false,
-          title: 'Le dernier exode',
-          poster: 'https://i.imgur.com/AB4QcIk.png',
+          title: 'Infiltrate AI',
+          poster: 'https://i.imgur.com/8CmJs8c.png',
           demo: true,
-          href: 'https://www.youtube.com/embed/x-r3R1TWStU',
-          description: 'Jeu réalisé pendant mon double diplôme à l\'UQAC pour le cours de Développement et conception de Jeux vidéo.\n\n' +
-            'Synopsis : Nous sommes en l’an 54210 et la Terre se meurt. Heureusement les derniers survivants ont trouvé\n' +
-            'un vaisseau légendaire et mystérieux avant de s’envoler vers les étoiles. Perdus dans l’infinité de\n' +
-            'l’univers, ils vont devoir reconstruire leur nouveau foyer dans ce vaisseau et faire face aux divers dangers de l’espace pour espérer survivre.\n' +
-            'Le monde de cette époque est plein de dangers et l\'équipage de la dernière exode va devoir trouver les moyens pour survivre et prospérer.',
-          has_link: true,
-          descr_link: 'Build téléchargeable : ',
-          link: 'https://fromiel.itch.io/le-dernier-exode',
-          role: 'Développeur Unity',
+          href: 'https://www.youtube.com/embed/CW93WIYNiDU',
+          description: 'This game was made as part of the serious games course with the theme "Demystifying AI". In ' +
+            'this game, we wanted to demystify one of the categories of AI: Behaviour Trees. It is an infiltration ' +
+            'game where the player must outsmart the AIs by changing their behavior tree.',
+          has_link: false,
+          descr_link: '',
+          link: '',
+          role: 'Unreal Developer',
           team: [
             {
-              name: 'Mathieu Baesen "Mathxxl"',
-              link: 'https://mathxxl.itch.io/',
-              role: 'Développeur Unity'
-            },
-            {
-              name: 'Quentin Morel "Im-Rises"',
-              link: 'https://im-rises.github.io/',
-              role: 'Développeur Unity'
+              name: 'Jules Linard "Midejyst"',
+              link: 'https://midejyst.itch.io/',
+              role: 'Unreal developer'
             },
             {
               name: 'Alexis Roville "Fromiel"',
               link: 'https://fromiel.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unreal Developer'
+            },
+            {
+              name: 'Léane Hauteville',
+              role: 'Unreal Developer'
+            },
+            {
+              name: 'Clémence Clavel',
+              role: 'Unreal Developer'
+            },
+            {
+              name: 'Hugo Da Maïa',
+              role: 'Unreal Developer'
+            }
+          ],
+          tech: [
+            'Unreal',
+            'AI'
+          ]
+        },
+        {
+          dialog: false,
+          title: 'Pocket Maths',
+          poster: 'https://i.imgur.com/84VRxzC.png',
+          demo: true,
+          href: 'https://www.youtube.com/embed/WyBaDUyJZxI',
+          description: 'This project aims to be a serious game that teaches children mathematics. The game is based on ' +
+            'Pokemon, with entities specific to the game universe that can be captured and trained (called "Numbersters").' +
+            ' However, unlike battles in Pokemon, the Numbersters\' attacks are mathematical operations that the player must ' +
+            'successfully complete to inflict damage on their opponent.',
+          has_link: false,
+          descr_link: ' ',
+          link: '',
+          role: 'Unity Developer',
+          team: [
+            {
+              name: 'Pierre Fourré',
+              role: 'Unity developer'
+            },
+            {
+              name: 'Louise Benharira',
+              role: 'Unity developer'
+            },
+            {
+              name: 'Noémie Lempereur',
+              role: 'Unity developer'
+            },
+            {
+              name: 'Lora Poupart',
+              role: 'Unity Developer'
+            }
+          ],
+          tech: [
+            'UNITY',
+            '2D'
+          ]
+        },
+        {
+          dialog: false,
+          title: 'Academic Apocalypse',
+          poster: 'https://i.imgur.com/qQAMEtn.png',
+          demo: true,
+          href: 'https://www.youtube.com/embed/d-1Fsqw9no8',
+          description: 'This project was made during our network course. This game is a zombie like where you can pick up weapons' +
+            'and shoot at zombies with your friends.',
+          has_link: false,
+          descr_link: ' ',
+          link: '',
+          role: 'Unreal Developer',
+          team: [
+            {
+              name: 'Jules Linard "Midejyst"',
+              link: 'https://midejyst.itch.io/',
+              role: 'Unreal developer'
+            },
+            {
+              name: 'Gabriel Reboul',
+              link: 'https://spiryti.itch.io/',
+              role: 'Unreal developer'
+            },
+            {
+              name: 'Quentin Morel "Im-Rises"',
+              link: 'https://im-rises.github.io/',
+              role: 'Unreal developer'
+            },
+            {
+              name: 'Alexis Roville "Fromiel"',
+              link: 'https://fromiel.itch.io/',
+              role: 'Unreal Developer'
+            }
+          ],
+          tech: [
+            'Unreal',
+            'Network'
+          ]
+        },
+        {
+          dialog: false,
+          title: 'The Last Exodus',
+          poster: 'https://i.imgur.com/AB4QcIk.png',
+          demo: true,
+          href: 'https://www.youtube.com/embed/x-r3R1TWStU',
+          description: 'Game created during my dual degree at UQAC for the course of Video Game Development and Design.\n\n' +
+          'Synopsis: It is the year 54210, and Earth is dying. Fortunately, the last survivors have found a legendary ' +
+            'and mysterious spaceship before flying off into the stars. Lost in the infinity of the universe, they will ' +
+            'have to rebuild their new home in this spaceship and face the various dangers of space to hope to survive. ' +
+            'The world of this era is full of dangers, and the crew of the Last Exodus will have to find ways to survive and thrive.',
+          has_link: true,
+          descr_link: 'Downloadable build : ',
+          link: 'https://fromiel.itch.io/le-dernier-exode',
+          role: 'Unity Developer',
+          team: [
+            {
+              name: 'Mathieu Baesen "Mathxxl"',
+              link: 'https://mathxxl.itch.io/',
+              role: 'Unity Developer'
+            },
+            {
+              name: 'Quentin Morel "Im-Rises"',
+              link: 'https://im-rises.github.io/',
+              role: 'Unity Developer'
+            },
+            {
+              name: 'Alexis Roville "Fromiel"',
+              link: 'https://fromiel.itch.io/',
+              role: 'Unity Developer'
             }
           ],
           tech: [
@@ -154,18 +272,18 @@ export default {
           poster: 'https://i.imgur.com/h5oeeC9.png',
           demo: true,
           href: 'https://www.youtube.com/embed/_SrKwK87QSE',
-          description: 'Jeu réalisé pendant la Global Game Jam 2023. C\'est un petit jeu de gestion calme et rapide.\n\n' +
-            'Synopsis : Gérer les racines d\'un arbre pour vous développer au maximum. Attention de ne pas vous étendre trop rapidement' +
-            ' ou les maladies et les conditions climatiques pourraient avoir raison de vous !',
+          description: 'Game created during the Global Game Jam 2023. It\'s a small, calm, and fast-paced management game.\n\n' +
+              'Synopsis: Manage the roots of a tree to grow as much as possible. Be careful not to spread too quickly, ' +
+            'or diseases and weather conditions may get the best of you!',
           has_link: true,
-          descr_link: 'Jouable par navigateur : ',
+          descr_link: 'Playable in browser : ',
           link: 'https://mathxxl.itch.io/roots-of-ceres',
-          role: 'Développeur Unity',
+          role: 'Unity Developer',
           team: [
             {
               name: 'Mathieu Baesen "Mathxxl"',
               link: 'https://mathxxl.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             }
           ],
           tech: [
@@ -179,45 +297,45 @@ export default {
           poster: 'https://i.imgur.com/EGpOIzk.jpg',
           demo: true,
           href: 'https://www.youtube.com/embed/gC-6ci2O8os',
-          description: 'Jeu réalisé pendant une game jam organisée par l\'ENSIIE dans le cadre des 50 ans de fouilles ' +
-            'archéologiques sur le site d\'Étiolles. Nous étions en contact avec des archéologues et historiens ' +
-            'spécialistes des Magdaléniens (aire du paléolithique).\n\n' +
-            'Synopsis : Vous êtes un archéologue catapulté au paléolithique qui lutte pour survivre contre le froid ' +
-            'et les bètes sauvages aux côté d\'une tribu de magdaléniens.',
+          description: 'Game created during a game jam organized by ENSIIE as part of the 50th anniversary of archaeological ' +
+            'excavations on the site of Étiolles. We were in contact with archaeologists and historians specializing in ' +
+            'the Magdalenian culture (a period of the Paleolithic era).\n\n' +
+          'Synopsis: You are an archaeologist catapulted back to the Paleolithic era, struggling to survive against the ' +
+            'cold and wild beasts alongside a tribe of Magdalenians.',
           has_link: true,
-          descr_link: 'Jouable par navigateur : ',
+          descr_link: 'Playable in browser : ',
           link: 'https://mathxxl.itch.io/etiolless-traveler',
-          role: 'Développeur Unity',
+          role: 'Unity Developer',
           team: [
             {
               name: 'Mathieu Baesen "Mathxxl"',
               link: 'https://mathxxl.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Alexis Roville "Fromiel"',
               link: 'https://fromiel.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Gaël Courmont',
               link: 'https://www.linkedin.com/in/gael-courmont-8a7906167/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Gabriel Reboul',
               link: 'https://spiryti.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Éléa Gadéa',
               link: 'https://www.linkedin.com/in/eleag/?locale=en_US',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Jules Linard "Midejyst"',
               link: 'https://midejyst.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             }
           ],
           tech: [
@@ -231,33 +349,33 @@ export default {
           poster: 'https://i.imgur.com/GsQmBGO.png',
           demo: true,
           href: 'https://www.youtube.com/embed/ZT6KAELQvwk',
-          description: 'Jeu réalisé pendant une game jam (Unijam 2022) avec une équipe constitué d\'étudiants en double diplôme à l\'UQAC.\n' +
-            'Il s\'agit d\'un runner (dans le même style que Geometry dash, Subway surfer ou Jetpack Joyride) où le joueur doit collecter ' +
-            'divers matériaux et les revendre aux bons endroits pour gagner le maximum de points.',
+          description: 'Game created during a game jam (Unijam 2022) with a team made up of students in a double degree ' +
+            'program at UQAC. It\'s a runner game (in the same style as Geometry Dash, Subway Surfer, or Jetpack Joyride) ' +
+            'where the player must collect various materials and sell them at the right places to earn the maximum number of points.',
           has_link: true,
-          descr_link: 'Jouable par navigateur : ',
+          descr_link: 'Playable in browser : ',
           link: 'https://mathxxl.itch.io/trader-runner',
-          role: 'Développeur Unity',
+          role: 'Unity Developer',
           team: [
             {
               name: 'Mathieu Baesen "Mathxxl"',
               link: 'https://mathxxl.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Gabriel Reboul',
               link: 'https://spiryti.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Alexis Roville "Fromiel"',
               link: 'https://fromiel.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Jules Linard "Midejyst"',
               link: 'https://midejyst.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             }
           ],
           tech: [
@@ -271,22 +389,22 @@ export default {
           poster: 'https://i.imgur.com/Wzvk3P6.png',
           demo: true,
           href: 'https://www.youtube.com/embed/8YeNXyrNjO8',
-          description: 'Jeu réalisé pendant le second semestre de ma deuxième année d\'école d\'ingénieur comme projet pour' +
-            ' le cours de Développement de Jeux vidéo 2. Il s\'agit d\'un shoot\'em up bullet hell inspiré de Touhou',
+          description: 'Game developed during the second semester of my second year of engineering school as a project ' +
+            'for the Game Development 2 course. It is a Touhou-inspired bullet hell shoot\'em up game.',
           has_link: true,
-          descr_link: 'Jouable par navigateur : ',
+          descr_link: 'Playable in browser : ',
           link: 'https://mathxxl.itch.io/higashikata',
-          role: 'Développeur Unity',
+          role: 'Unity Developer',
           team: [
             {
               name: 'Mathieu Baesen "Mathxxl"',
               link: 'https://mathxxl.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Jules Linard "Midejyst"',
               link: 'https://midejyst.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             }
           ],
           tech: [
@@ -300,38 +418,37 @@ export default {
           poster: 'https://i.imgur.com/pqxqFIL.png',
           demo: true,
           href: 'https://youtube.com/embed/KYu0GYQfNEE',
-          description: 'Jeu réalisé en Game jam (Global gam jam 2022).\n\n' +
-            'Synopsis : Fait face aux dangers d\'un train féérique avec l\'aide d\'un ange et d\'un démon et ' +
-            'essaie d\'atteindre la sortie !',
+          description: 'Game made during a Global Game Jam 2022.\n\n' +
+          'Synopsis: Face the dangers of a fairy train with the help of an angel and a demon and try to reach the exit!',
           has_link: true,
-          descr_link: 'Build téléchargeable : ',
+          descr_link: 'Downloadable build : ',
           link: 'https://globalgamejam.org/2022/games/fireflies-express-1',
-          role: 'Développeur Unity',
+          role: 'Unity Developer',
           team: [
             {
               name: 'Mathieu Baesen',
               link: 'https://mathxxl.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Gaël Courmont',
               link: 'https://www.linkedin.com/in/gael-courmont-8a7906167/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Jules Linard "Midejyst"',
               link: 'https://midejyst.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Gato Bryan Amegnido"',
               link: 'https://www.linkedin.com/in/gato-bryan-amegnido-56a91a1b6/?originalSubdomain=fr',
-              role: 'Graphiste 2D'
+              role: '2D artist'
             },
             {
               name: '"Momo Neutral""',
               link: 'https://www.instagram.com/neutral.momo/',
-              role: 'Graphiste 2D'
+              role: '2D artist'
             }
           ],
           tech: [
@@ -345,22 +462,22 @@ export default {
           poster: 'https://i.imgur.com/GvZujJF.png',
           demo: true,
           href: 'https://youtube.com/embed/9H2mbBLPEwA',
-          description: 'Jeu réalisé comme projet de fin de semestre pour le cours de Développement de Jeux vidéo. C\'est un tower defense' +
-            ' où nous devons nous défendre contre des créatures de noël.',
+          description: 'Game created as a end-of-semester project for the course of Game Development. It\'s a tower ' +
+            'defense game where we have to defend ourselves against Christmas creatures.',
           has_link: false,
-          descr_link: 'Build téléchargeable : ',
+          descr_link: 'Downloadable build : ',
           link: 'https://github.com/Alshkor/Projet-DJV',
-          role: 'Développeur Unity',
+          role: 'Unity Developer',
           team: [
             {
               name: 'Mathieu Baesen "Mathxxl"',
               link: 'https://mathxxl.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Jules Linard "Midejyst"',
               link: 'https://midejyst.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             }
           ],
           tech: [
@@ -374,13 +491,13 @@ export default {
           poster: 'https://i.imgur.com/BADMyQB.png',
           demo: true,
           href: 'https://youtube.com/embed/O10XBLTC3tc',
-          description: 'Projet réalisé en parallèle de mes cours pour tester mes compétences après la réalisation d\'un ' +
-            'MOOC (massive open online course) en réalité virtuelle et augmentée. Le projet vise a rendre jouable "Christmas Carnage", que ' +
-            'j\'ai développé précédemment, avec un casque de réalité virtuelle.',
+          description: 'Project undertaken parallel to my coursework to test my skills after completing a massive open ' +
+            'online course (MOOC) in virtual and augmented reality. The project aims to make "Christmas Carnage," which ' +
+            'I previously developed, playable with a virtual reality headset.',
           has_link: false,
-          descr_link: 'Build téléchargeable : ',
+          descr_link: 'Downloadable build : ',
           link: 'https://github.com/Alshkor/Projet-DJV',
-          role: 'Développeur Unity',
+          role: 'Unity Developer',
           team: [],
           tech: [
             'UNITY',
@@ -389,46 +506,45 @@ export default {
         },
         {
           dialog: false,
-          title: 'Brocantes et coeurs brisés',
+          title: 'Market and broken hearts',
           poster: 'https://imgur.com/j0YF0WK.png',
           demo: false,
           demo_image: 'https://imgur.com/4Poy5y5.png',
           href: '',
-          description: 'Jeu réalisé pendant une game jam (Unijam 2021). C\'était ma première expérience en game jam.\n\n' +
-            'Synopsis : Vous êtes un brocanteur au fin fond de l’Alsace-Lorraine. Hélas, si la vie n’était pas trop ' +
-            'dur avec votre femme et vos deux enfants, votre père vient de tomber très malade. Vous êtes dans une course ' +
-            'contre la montre pour gagner suffisamment d’argent pour le sauver.\n' +
-            'Vendez vos objets aux passants de ce village perdu mais prenez garde : votre réputation de brocanteur pourrait ' +
-            'pâtir de vos actions.',
+          description: 'Game developed during a game jam (Unijam 2021). It was my first experience in a game jam.\n\n' +
+          'Synopsis: You are a junk dealer in the depths of Alsace-Lorraine. Unfortunately, while life was not too hard ' +
+            'on your wife and two children, your father has just fallen seriously ill. You are in a race against time to ' +
+            'earn enough money to save him. Sell your items to passers-by in this lost village, but be careful: your ' +
+            'reputation as a junk dealer could suffer from your actions.',
           has_link: true,
-          descr_link: 'Build téléchargeable : ',
+          descr_link: 'Downloadable build :  ',
           link: 'https://biscuitprime.itch.io/brocante-coeurs-brises',
-          role: 'Développeur Unity',
+          role: 'Unity Developer',
           team: [
             {
               name: 'Mathieu Baesen "Mathxxl"',
               link: 'https://mathxxl.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Henri Nomico "Biscuit Prime"',
               link: 'https://biscuitprime.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Sulray',
               link: 'https://sulray.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Alexandre "Flegmatik"',
               link: 'https://flegmatik-surf.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Prométhée Toneatti "Akasunaa"',
               link: 'https://akasunaa.github.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             }
           ],
 
@@ -443,25 +559,24 @@ export default {
           poster: 'https://imgur.com/nX6Nlnt.png',
           demo: true,
           href: 'https://youtube.com/embed/xdFi7ld--m8',
-          description: 'Un jeu d\'exploration réalisé pendant l\'été de ma première année en école d\'ingénieur. ' +
-            'Le jeu a été réalisé dans le cadre d\'une expérience entreprenatiale où, avec 2 autres étudiants, ' +
-            'Mathieu Baesen et Harry Hung, nous avons simulé la naissance d\'un studio de jeu vidéo en auto-entrepreneur.' +
-            '\n\n Ce jeu est mon premier gros projet sur Unity, bien que j\'ai réalisé quelques petits projets ' +
-            'personnels pour essayer le moteur de jeu et découvrir ses fonctionnalités',
+          description: 'An exploration game made during the summer of my first year in engineering school. The game was' +
+            ' created as part of an entrepreneurial experiment where, with two other students, Mathieu Baesen and Harry' +
+            ' Hung, we simulated the birth of a video game studio as a self-employed individual.\n\n' +
+          'This game is my first big project on Unity, although I have created a few small personal projects to try out the game engine and discover its features.',
           has_link: true,
-          descr_link: 'Build téléchargeable : ',
+          descr_link: 'Downloadable build : ',
           link: 'https://magiasunheat.itch.io/aux-confins-du-monde',
-          role: 'Développeur Unity',
+          role: 'Unity Developer',
           team: [
             {
               name: 'Mathieu Baesen "Mathxxl"',
               link: 'https://mathxxl.itch.io/',
-              role: 'Développeur Unity'
+              role: 'Unity Developer'
             },
             {
               name: 'Harry Hung "Raydhox"',
               link: '',
-              role: 'Graphiste 3D'
+              role: '3D artist'
             }
           ],
           tech: [
@@ -476,26 +591,27 @@ export default {
           demo: false,
           demo_image: 'https://i.imgur.com/rt2Eozx.png',
           href: '',
-          description: 'Premier projet universitaire réalisé avec 4 autres étudiants. Il s\'agit d\'un jeu de plateau réalisé en C avec une interface graphique.',
+          description: 'First university project carried out with 4 other students. It is a board game made in C with ' +
+            'a graphical interface.',
           has_link: false,
           descr_link: '',
           link: '',
-          role: 'Développeur Unity',
+          role: 'C Developer',
           team: [
             {
               name: 'Maximilien Schollaert',
               link: 'https://github.com/Rivainzo',
-              role: 'Développeur C'
+              role: 'C Developer'
             },
             {
               name: 'Jules Linard "Midejyst"',
               link: 'https://midejyst.itch.io/',
-              role: 'Développeur C'
+              role: 'C Developer'
             },
             {
               name: 'Thomas Idziejczak',
               link: 'https://github.com/Wickdhub',
-              role: 'Développeur C'
+              role: 'C Developer'
             }
           ],
           tech: [

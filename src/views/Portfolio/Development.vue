@@ -2,7 +2,7 @@
   <v-container grid-list-xl>
     <h2 class="pl-4">
       <span>Development</span>
-      <span class="red--text">Portfolio</span>
+      <span class="red--text"> Portfolio</span>
     </h2>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-dialog
@@ -106,27 +106,27 @@ export default {
       projects: [
         {
           dialog: false,
-          title: 'Moteur physique en C++',
+          title: 'Physics engine in C++',
           poster: 'https://i.imgur.com/d60gGYP.png',
           demo: false,
           demo_image: 'https://i.imgur.com/d60gGYP.png',
           href: '',
-          description: 'Nous avons créé un moteur physique en C++ dans le cadre du cours de Mathématiques et Physiques dans le jeux vidéo ' +
-            'à l\'UQAC pendant ma dernière année d\'école d\'ingénieur.',
+          description: 'We created a physics engine in C++ as part of the Mathematics and Physics course for video games ' +
+            'at UQAC during my last year of engineering school.',
           has_link: false,
-          descr_link: 'Template du portfolio : ',
+          descr_link: '',
           link: 'https://github.com/Alshkor/Projet_mathematiques_physiques',
           role: 'C++ Developer',
           team: [
             {
               name: 'Deryne Four',
               link: 'https://github.com/Deryne',
-              role: 'C++ Developper'
+              role: 'C++ Developer'
             },
             {
               name: 'Pierre Fourré',
               link: 'https://github.com/Fourrep',
-              role: 'C++ Developper'
+              role: 'C++ Developer'
             }
           ],
           tech: [
@@ -137,14 +137,14 @@ export default {
         },
         {
           dialog: false,
-          title: 'Ce site',
+          title: 'This website',
           poster: 'https://i.imgur.com/gjq1yyQ.png',
           demo: false,
           demo_image: 'https://i.imgur.com/gjq1yyQ.png',
           href: '',
-          description: 'Ce site a été réalisé grâce au template de Eldin Zaimovic pour montrer mon travail en développement de jeux vidéo.',
+          description: 'This website was created using Eldin Zaimovic\'s template to showcase my work in video game development.',
           has_link: true,
-          descr_link: 'Template du portfolio : ',
+          descr_link: 'Portfolio template : ',
           link: 'https://eldin.space/',
           role: 'Vue developer',
           team: [],
@@ -162,17 +162,16 @@ export default {
           demo: false,
           demo_image: 'https://i.imgur.com/1Mf9MVa.png',
           href: '',
-          description: 'Nous avons créé un moteur graphique en utilisant uniquement la bibliothèque graphique 2D SDL et le principe de ' +
-            'rasterisation.',
+          description: 'We created a graphics engine using only the 2D graphics library SDL and the principle of rasterization.',
           has_link: false,
-          link: 'https://github.com/Alshkor/portefolioduq',
-          descr_link: 'Template du portfolio : ',
-          role: 'Développeur C++',
+          link: '',
+          descr_link: '',
+          role: 'C++ Developer',
           team: [
             {
               name: 'Mathieu Baesen "Mathxxl"',
               link: 'https://mathxxl.itch.io/',
-              role: 'C++ Developper'
+              role: 'C++ Developer'
             }
           ],
           tech: [
@@ -187,10 +186,10 @@ export default {
           demo: false,
           demo_image: 'https://i.imgur.com/r7kgqXS.png',
           href: '',
-          description: 'Nous avons faits un site de quizz sur le jeu vidéo League of legend où vous pouvez tester vos connaissance' +
-            ' sur ce jeu (que ce soit l\'histoire, l\'esport ou le jeu en lui-même).',
+          description: 'We made a quiz website about the video game League of Legends where you can test your knowledge ' +
+            'of the game (whether it\'s about the story, esports, or the gameplay itself).',
           has_link: false,
-          descr_link: 'Template du portfolio : ',
+          descr_link: '',
           link: '',
           role: 'Web developer',
           team: [],

@@ -7,12 +7,12 @@
           <v-timeline-item color="blue" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">SETP 2022 -</div>
-                <div class="caption font-weight-bold blue--text">PRÉSENT</div>
+                <div class="caption font-weight-bold blue--text">SEPTEMBER 2022 -</div>
+                <div class="caption font-weight-bold blue--text">NOW</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Maitrise informatique spécialité jeux vidéo</strong>
-                <div class="caption mb-2">Université du Québec à Chicoutimi</div>
+                <strong>Computer Science Master's Degree specialized in Video Game Development.</strong>
+                <div class="caption mb-2">UQAC (Chicoutimi highschool)</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -20,12 +20,12 @@
           <v-timeline-item color="blue" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">SEPT 2020 -</div>
-                <div class="caption font-weight-bold blue--text">PRÉSENT</div>
+                <div class="caption font-weight-bold blue--text">SEPTEMBER 2020 -</div>
+                <div class="caption font-weight-bold blue--text">NOW</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Diplôme d'ingénieur en jeux vidéo et intéractions numériques</strong>
-                <div class="caption mb-2">ENSIIE Évry-Courcouronnes</div>
+                <strong>Degree in Engineering for Video Games and Digital Interactions.</strong>
+                <div class="caption mb-2">ENSIIE (Évry-Courcouronnes Engeneering schools)</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -33,12 +33,13 @@
           <v-timeline-item color="blue" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">SEP 2018 -</div>
-                <div class="caption font-weight-bold blue--text">JUIN 2020</div>
+                <div class="caption font-weight-bold blue--text">SEPTEMBER 2018 -</div>
+                <div class="caption font-weight-bold blue--text">JUNE 2020</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>École préparatoire spécialité mathématique</strong>
-                <div class="caption mb-2">Lycée Faidherbe à Lille</div>
+                <strong> Mathematics studies</strong>
+                <div class="caption mb-2">Preparation for national competitive entrance exams leading to top
+                  French Engeneering schools in secondary school Faidherbe in Lille.</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -46,12 +47,12 @@
           <v-timeline-item color="blue" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">SEP 2015 -</div>
-                <div class="caption font-weight-bold blue--text">JUIN 2018</div>
+                <div class="caption font-weight-bold blue--text">SEPTEMBER 2015 -</div>
+                <div class="caption font-weight-bold blue--text">JUNE 2018</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Baccalauréat scientifique</strong>
-                <div class="caption mb-2">Lycée Robespierre à Arras</div>
+                <strong>Baccalaureat degree</strong>
+                <div class="caption mb-2">Robespierre secondary school in Arras</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -65,11 +66,11 @@
           <v-timeline-item color="blue" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">MAI 2022</div>
-                <div class="caption font-weight-bold blue--text">AOUT 2022</div>
+                <div class="caption font-weight-bold blue--text">MAY 2022</div>
+                <div class="caption font-weight-bold blue--text">AUGUST 2022</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Recherche du processus de génération de maillages 3D de vêtements.</strong>
+                <strong>Search for the process of generating 3D meshes for clothing.</strong>
                 <div class="caption mb-2">ModaLive</div>
               </v-flex>
             </v-layout>
@@ -78,11 +79,11 @@
           <v-timeline-item color="blue" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">JUIN 2021</div>
-                <div class="caption font-weight-bold blue--text">SEPTEMBRE 2021</div>
+                <div class="caption font-weight-bold blue--text">JUNE 2021</div>
+                <div class="caption font-weight-bold blue--text">SEPTEMBER 2021</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Création d'une startup dans le jeux vidéo</strong>
+                <strong>Simulate the creation of a video games startup</strong>
                 <div class="caption mb-2">Magia</div>
               </v-flex>
             </v-layout>
@@ -91,12 +92,12 @@
           <v-timeline-item color="blue" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">JUILLET 2020</div>
-                <div class="caption font-weight-bold blue--text">SEPTEMBRE 2020</div>
+                <div class="caption font-weight-bold blue--text">JULY 2020</div>
+                <div class="caption font-weight-bold blue--text">SEPTEMBER 2020</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Gestion d'inventaire</strong>
-                <div class="caption mb-2">Pharmacie aubignoise</div>
+                <strong>Inventory management</strong>
+                <div class="caption mb-2">Pharmacy aubignoise</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -140,7 +141,7 @@
           dark
           large
         >
-          Télécharger le CV
+          Download Resume
           <v-icon right dark>fas fa-file-download</v-icon>
         </v-btn>
       </div>

@@ -3,8 +3,8 @@
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-flex xs12 sm12 md6 lg6 xl6>
         <h2 class="pb-4 mt-2">
-          <span>GetIn</span>
-          <span class="red--text">Touch</span>
+          <span>Get In</span>
+          <span class="red--text"> Touch</span>
         </h2>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="blue" left>fas fa-map-marker-alt</v-icon>
@@ -24,15 +24,15 @@
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="blue" left>fas fa-check</v-icon>
           <span>internship</span>
-          <span class="blue--text"> Disponible</span>
-          <span> à partir de juillet</span>
+          <span class="blue--text"> Available</span>
+          <span> starting from July</span>
         </div>
       </v-flex>
 
       <v-flex xs12 sm12 md6 lg6 xl6>
         <h2 class="pb-4 mb-4">
           <span>Contact</span>
-          <span class="red--text">Form</span>
+          <span class="red--text"> Form</span>
         </h2>
 
         <form method="POST" action="https://formspree.io/f/xjvlwaoj">

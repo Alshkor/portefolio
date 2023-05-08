@@ -48,16 +48,16 @@
             </h3>
             <div>
               <p>
-                Hello! I’m Axel Courmont. I'm a Engineering student who
+                Hello! I’m Axel Courmont. I'm an Engineering student who
                 is passionate about
                 <span
                   class="red--text font-weight-bold"
                 >Video Games</span> and
                 <span
                   class="red--text font-weight-bold"
-                >AI</span>, building great gaming experience,
-                fighting for simplicity over complexity and constantly learning.
-                When I'm not coding, you'll find me listening to music or travelling through europe.
+                >Virtual Reality</span>, I enjoy building great gaming experience,
+                creating fun and unusual video games, and developing immersive applications.
+                When I'm not coding, you'll find me listening to music or watching anime.
               </p>
             </div>
           </div>
