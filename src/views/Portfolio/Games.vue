@@ -113,6 +113,34 @@ export default {
       project: [
         {
           dialog: false,
+          title: 'Fortress Siege WIP',
+          poster: 'https://i.imgur.com/yKEyklj.jpg',
+          demo: false,
+          href: '',
+          description: 'For my last project in school, I want to make a game that was on my mind since some times and use' +
+            ' what I have learned during previous course. This project is made using Unreal engine in multiplayer.' +
+            '\n' +
+            'This game is inspired by Dwarf Heim on a tower defense basis where one player is playing the tower defense by ' +
+            'placing towers and upgrading them and the other player is playing a strategy game where the player must manage ' +
+            'the ressource generation.',
+          has_link: false,
+          descr_link: ' ',
+          link: '',
+          role: 'Unreal Developer',
+          team: [
+            {
+              name: 'Quentin Morel "Im-Rises"',
+              link: 'https://im-rises.github.io/',
+              role: 'Unreal developer'
+            }
+          ],
+          tech: [
+            'Unreal engine',
+            'Online'
+          ]
+        },
+        {
+          dialog: false,
           title: 'Infiltrate AI',
           poster: 'https://i.imgur.com/8CmJs8c.png',
           demo: true,

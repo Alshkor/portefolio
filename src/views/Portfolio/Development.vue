@@ -106,6 +106,37 @@ export default {
       projects: [
         {
           dialog: false,
+          title: 'N-Body simulation using Docker WIP',
+          poster: 'https://i.imgur.com/Ps5zAcs.png',
+          demo: false,
+          demo_image: '',
+          href: '',
+          description: 'As a first application using containerization, we made a n-body simulation system to try to ' +
+            'render as many particles as we can.',
+          has_link: false,
+          descr_link: '',
+          link: '',
+          role: 'Developer',
+          team: [
+            {
+              name: 'Quentin Morel "Im-Rises"',
+              link: 'https://im-rises.github.io/',
+              role: 'Unity developer'
+            },
+            {
+              name: 'Alexis Roville "Fromiel"',
+              link: 'https://fromiel.itch.io/',
+              role: 'Unreal Developer'
+            }
+          ],
+          tech: [
+            'C++',
+            'OpenGL',
+            'Docker'
+          ]
+        },
+        {
+          dialog: false,
           title: 'Physics engine in C++',
           poster: 'https://i.imgur.com/d60gGYP.png',
           demo: false,
