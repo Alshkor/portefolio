@@ -115,14 +115,15 @@ export default {
           dialog: false,
           title: 'Fortress Siege WIP',
           poster: 'https://i.imgur.com/yKEyklj.jpg',
-          demo: false,
-          href: '',
+          demo: true,
+          href: 'https://www.youtube.com/embed/P2y_fUtwg_Q',
           description: 'For my last project in school, I want to make a game that was on my mind since some times and use' +
             ' what I have learned during previous course. This project is made using Unreal engine in multiplayer.' +
             '\n' +
             'This game is inspired by Dwarf Heim on a tower defense basis where one player is playing the tower defense by ' +
             'placing towers and upgrading them and the other player is playing a strategy game where the player must manage ' +
-            'the ressource generation.',
+            'the ressource generation.\n' +
+            'The following trailer was made after 2 months of development and does not represent the complete project we want to achieve, but it already gives a good idea of the game\'s aesthetics.',
           has_link: false,
           descr_link: ' ',
           link: '',
