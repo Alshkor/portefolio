@@ -23,9 +23,9 @@
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="blue" left>fas fa-check</v-icon>
-          <span>internship</span>
-          <span class="blue--text"> Available</span>
-          <span> starting from July</span>
+          <span>Available for </span>
+          <span class="blue--text">employment</span>
+          <span> starting from Mars.</span>
         </div>
       </v-flex>
 
