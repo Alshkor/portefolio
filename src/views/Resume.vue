@@ -66,6 +66,19 @@
           <v-timeline-item color="blue" small>
             <v-layout pt-3>
               <v-flex xs4>
+                <div class="caption font-weight-bold blue--text">SEPTEMBER 2023</div>
+                <div class="caption font-weight-bold blue--text">FEBRUARY 2024</div>
+              </v-flex>
+              <v-flex class="pl-2">
+                <strong>UI Developer on the Tour De France game.</strong>
+                <div class="caption mb-2">Cyanide Studio</div>
+              </v-flex>
+            </v-layout>
+          </v-timeline-item>
+
+          <v-timeline-item color="blue" small>
+            <v-layout pt-3>
+              <v-flex xs4>
                 <div class="caption font-weight-bold blue--text">MAY 2022</div>
                 <div class="caption font-weight-bold blue--text">AUGUST 2022</div>
               </v-flex>
